@@ -1,0 +1,110 @@
+// ==============================================================================
+// SANEAGO STUDY - CATÁLOGO DE CARGOS DA SANEAGO
+// Baseado em editais oficiais anteriores (CS-UFG / SANEAGO)
+// Status estritamente classificado: 'concurso_anterior' | 'confirmado_oficial' | 'estimativa' | 'pendente_confirmacao'
+// ==============================================================================
+
+export const SANEAGO_ROLES = [
+  {
+    id: "agente_saneamento",
+    name: "Agente de Saneamento",
+    educationLevel: "Médio",
+    requirements: "Certificado de conclusão de Ensino Médio expedido por instituição reconhecida pelo MEC.",
+    duties: "Executar atividades de apoio operacional nos sistemas de água e esgoto, leitura de hidrômetros, atendimento preliminar ao público, entrega de avisos, verificação de ligações e inspeções em campo.",
+    salaryInfo: "R$ 2.650,00 a R$ 3.100,00 (Remuneração base histórica)",
+    benefits: "Vale-alimentação, plano de saúde e odontológico, previdência complementar (Saneaprev), auxílio-creche e participação nos lucros e resultados (PLR) conforme acordo coletivo.",
+    workload: "40 horas semanais",
+    sourceStatus: "concurso_anterior",
+    referenceContest: "Edital CS-UFG / SANEAGO 2018 (retificado 2020)",
+    sourceDocument: "Edital nº 01/2018 SANEAGO - CS-UFG",
+    examStages: "Prova Objetiva (eliminatória e classificatória)",
+    questionsCount: 60,
+    isCustom: false,
+    subjectIds: ["portugues", "rlm", "legislacao_saneago", "saneamento_meio_ambiente", "direito_adm"]
+  },
+  {
+    id: "tecnico_saneamento",
+    name: "Técnico em Saneamento (Edificações / Saneamento)",
+    educationLevel: "Técnico",
+    requirements: "Ensino Médio completo e Curso Técnico em Saneamento ou Edificações, com registro ativo no respectivo Conselho de Classe (CRT/CFT).",
+    duties: "Auxiliar no controle de qualidade da água e efluentes, fiscalizar obras civis de redes adutoras e interceptores, realizar medições topográficas e acompanhar manutenções preventivas e corretivas em ETAs e ETEs.",
+    salaryInfo: "R$ 4.250,00 a R$ 5.100,00 (Remuneração base histórica)",
+    benefits: "Vale-alimentação, plano de assistência médica/odontológica, plano de previdência complementar, PLR e adicional de insalubridade/periculosidade quando aplicável.",
+    workload: "40 horas semanais",
+    sourceStatus: "concurso_anterior",
+    referenceContest: "Edital CS-UFG / SANEAGO 2018",
+    sourceDocument: "Edital nº 01/2018 SANEAGO - CS-UFG",
+    examStages: "Prova Objetiva e Prova Prática/Títulos quando especificado",
+    questionsCount: 60,
+    isCustom: false,
+    subjectIds: ["portugues", "rlm", "legislacao_saneago", "saneamento_meio_ambiente", "conhecimentos_tecnicos_saneamento"]
+  },
+  {
+    id: "tecnico_quimica",
+    name: "Técnico em Química / Laboratório",
+    educationLevel: "Técnico",
+    requirements: "Ensino Médio e Curso Técnico em Química com registro ativo no Conselho Regional de Química (CRQ).",
+    duties: "Realizar ensaios físico-químicos e bacteriológicos de amostras de água bruta, tratada e de efluentes sanitários, manusear reagentes e emitir laudos de conformidade com os padrões de potabilidade.",
+    salaryInfo: "R$ 4.250,00 a R$ 5.100,00",
+    benefits: "Vale-alimentação, plano de saúde, seguro em grupo, adicional de periculosidade/insalubridade e previdência complementar.",
+    workload: "40 horas semanais",
+    sourceStatus: "concurso_anterior",
+    referenceContest: "Edital CS-UFG / SANEAGO 2018",
+    sourceDocument: "Edital nº 01/2018 SANEAGO - CS-UFG",
+    examStages: "Prova Objetiva de Conhecimentos Gerais e Específicos",
+    questionsCount: 60,
+    isCustom: false,
+    subjectIds: ["portugues", "rlm", "legislacao_saneago", "saneamento_meio_ambiente", "quimica_saneamento"]
+  },
+  {
+    id: "analista_engenharia_civil",
+    name: "Analista de Saneamento - Engenharia Civil",
+    educationLevel: "Superior",
+    requirements: "Diploma de graduação de nível superior em Engenharia Civil devidamente registrado e registro profissional no CREA-GO.",
+    duties: "Elaborar, coordenar e fiscalizar projetos hidrossanitários, redes coletoras, emissários, reservatórios e estações elevatórias; gerenciar obras de infraestrutura e contratos de saneamento.",
+    salaryInfo: "R$ 9.800,00 a R$ 12.300,00 (Piso do Engenheiro / Legislação federal e Plano de Cargos)",
+    benefits: "Vale-refeição/alimentação compatível com carreira superior, plano de saúde amplo, previdência privada, PLR anual e progressão na carreira.",
+    workload: "40 horas semanais",
+    sourceStatus: "concurso_anterior",
+    referenceContest: "Edital CS-UFG / SANEAGO 2018",
+    sourceDocument: "Edital nº 01/2018 SANEAGO - CS-UFG",
+    examStages: "Prova Objetiva, Prova Discursiva (Estudo de Caso) e Avaliação de Títulos",
+    questionsCount: 60,
+    isCustom: false,
+    subjectIds: ["portugues", "rlm", "direito_adm", "legislacao_saneago", "saneamento_meio_ambiente", "eng_civil_saneamento"]
+  },
+  {
+    id: "analista_gestao_adm",
+    name: "Analista de Gestão - Administração",
+    educationLevel: "Superior",
+    requirements: "Diploma de graduação em Administração de Empresas registrado no MEC e registro ativo no CRA-GO.",
+    duties: "Planejar, supervisionar e executar processos administrativos, compras públicas, gestão de contratos, auditoria de processos internos, gestão de pessoas e orçamento da companhia.",
+    salaryInfo: "R$ 7.200,00 a R$ 9.400,00",
+    benefits: "Vale-alimentação, assistência médica integral, previdência complementar, gratificação e PLR.",
+    workload: "40 horas semanais",
+    sourceStatus: "concurso_anterior",
+    referenceContest: "Edital CS-UFG / SANEAGO 2018",
+    sourceDocument: "Edital nº 01/2018 SANEAGO - CS-UFG",
+    examStages: "Prova Objetiva e Prova Discursiva",
+    questionsCount: 60,
+    isCustom: false,
+    subjectIds: ["portugues", "rlm", "direito_adm", "legislacao_saneago", "administracao_publica"]
+  },
+  {
+    id: "analista_biologia",
+    name: "Analista de Saneamento - Biologia / Meio Ambiente",
+    educationLevel: "Superior",
+    requirements: "Graduação de nível superior em Ciências Biológicas ou Engenharia Ambiental, com inscrição no respectivo conselho profissional (CRBio ou CREA).",
+    duties: "Monitorar parâmetros microbiológicos em mananciais e bacias hidrográficas, elaborar relatórios de impacto ambiental (EIA/RIMA), acompanhar licenciamentos ambientais e estudos de despoluição.",
+    salaryInfo: "R$ 7.500,00 a R$ 9.600,00",
+    benefits: "Vale-alimentação, plano odontológico e médico, PLR, previdência complementar.",
+    workload: "40 horas semanais",
+    sourceStatus: "concurso_anterior",
+    referenceContest: "Edital CS-UFG / SANEAGO 2018",
+    sourceDocument: "Edital nº 01/2018 SANEAGO - CS-UFG",
+    examStages: "Prova Objetiva e Prova Discursiva",
+    questionsCount: 60,
+    isCustom: false,
+    subjectIds: ["portugues", "rlm", "direito_adm", "legislacao_saneago", "saneamento_meio_ambiente", "biologia_ambiental"]
+  }
+];
