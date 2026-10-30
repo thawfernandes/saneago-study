@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saneago Study - Plataforma Pessoal de Preparação para Concursos da Saneago</title>
+  <meta name="description" content="Painel de estudos pessoal e gratuito para concursos públicos da Saneago. Organize seu cronograma adaptativo, resolva questões oficiais comentadas, controle revisões e compartilhe matérias entre cargos sem login tradicional.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💧</text></svg>">
+  <script type="module" crossorigin src="./assets/index-Drf90_I1.js"></script>
+  <link rel="stylesheet" crossorigin href="./assets/index-BIv8p17u.css">
+</head>
+<body>
+  <div id="app">
+    <!-- OVERLAY MOBILE -->
+    <div id="sidebar-overlay" class="sidebar-overlay"></div>
+
+    <!-- MENU LATERAL (SIDEBAR) -->
+    <aside id="app-sidebar" class="app-sidebar">
+      <div class="sidebar-header">
+        <div class="brand-icon">💧</div>
+        <div class="brand-info">
+          <h1>Saneago Study</h1>
+          <p>Preparação para Concursos</p>
+        </div>
+      </div>
+
+      <!-- ITENS DE MENU NA ORDEM EXATA DA SEÇÃO 20 -->
+      <nav class="sidebar-nav">
+        <a href="#inicio" class="nav-item active" data-route="dashboard">
+          <span class="nav-icon">🏠</span>
+          <span>Início</span>
+        </a>
+
+        <a href="#cronograma" class="nav-item" data-route="schedule">
+          <span class="nav-icon">📅</span>
+          <span>Meu cronograma</span>
+        </a>
+
+        <a href="#materias" class="nav-item" data-route="subjects">
+          <span class="nav-icon">📚</span>
+          <span>Matérias e trilhas</span>
+        </a>
+
+        <a href="#sessao" class="nav-item" data-route="timer">
+          <span class="nav-icon">⏱️</span>
+          <span>Sessão de estudos</span>
+        </a>
+
+        <a href="#questoes" class="nav-item" data-route="questions">
+          <span class="nav-icon">📝</span>
+          <span>Questões e simulados</span>
+        </a>
+
+        <a href="#revisoes" class="nav-item" data-route="reviews">
+          <span class="nav-icon">🔄</span>
+          <span>Revisões e caderno de erros</span>
+          <span id="nav-reviews-badge" class="nav-badge" style="display: none;">0</span>
+        </a>
+
+        <a href="#materiais" class="nav-item" data-route="materials">
+          <span class="nav-icon">📂</span>
+          <span>Materiais e resumos</span>
+        </a>
+
+        <a href="#cargos" class="nav-item" data-route="roles">
+          <span class="nav-icon">🏢</span>
+          <span>Cargos da Saneago</span>
+        </a>
+
+        <a href="#banca" class="nav-item" data-route="banca">
+          <span class="nav-icon">🔍</span>
+          <span>Estudo da banca</span>
+        </a>
+
+        <a href="#desempenho" class="nav-item" data-route="performance">
+          <span class="nav-icon">📊</span>
+          <span>Meu desempenho</span>
+        </a>
+
+        <a href="#metas" class="nav-item" data-route="goals">
+          <span class="nav-icon">🎯</span>
+          <span>Metas</span>
+        </a>
+
+        <a href="#perfil" class="nav-item" data-route="profile">
+          <span class="nav-icon">👤</span>
+          <span>Meu perfil e configurações</span>
+        </a>
+      </nav>
+
+      <!-- RODAPÉ DA SIDEBAR: MINI CARD DO ESTUDANTE -->
+      <div class="sidebar-footer">
+        <div id="sidebar-user-card" class="user-mini-card">
+          <div id="user-avatar-initials" class="user-avatar">S</div>
+          <div class="user-details">
+            <div id="sidebar-user-name" class="user-name">Carregando...</div>
+            <div id="sidebar-user-role" class="user-role-badge">Candidato Saneago</div>
+          </div>
+        </div>
+      </div>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL -->
+    <div class="app-main">
+      <!-- BARRA SUPERIOR (TOPBAR) -->
+      <header class="topbar">
+        <div class="topbar-left">
+          <button id="btn-toggle-mobile-menu" class="mobile-menu-btn" aria-label="Abrir menu de navegação">
+            ☰
+          </button>
+          <div class="page-title-box">
+            <h2 id="topbar-page-title">Início</h2>
+            <p id="topbar-page-subtitle">Visão geral do seu progresso e tarefas do dia</p>
+          </div>
+        </div>
+
+        <div class="topbar-right">
+          <!-- Widget do cronômetro em tempo real -->
+          <div id="topbar-timer-widget" class="topbar-timer-widget" style="display: none;" title="Clique para ver a sessão de estudos">
+            <span>⏱️</span>
+            <span id="topbar-timer-text">00:00</span>
+          </div>
+
+          <!-- Pílula de status do Supabase / Sincronização -->
+          <div id="topbar-sync-status" class="sync-status-pill" title="Clique para gerenciar a sincronização">
+            <span id="topbar-sync-dot" class="sync-dot"></span>
+            <span id="topbar-sync-label">Modo Local</span>
+          </div>
+        </div>
+      </header>
+
+      <!-- CONTEÚDO PRINCIPAL (RENDERIZAÇÃO DAS VIEWS) -->
+      <main id="main-content" class="content-wrapper">
+        <!-- Injetado dinamicamente via main.js -->
+      </main>
+    </div>
+  </div>
+
+  <!-- CONTAINER DE NOTIFICAÇÕES (TOASTS) -->
+  <div id="toast-container" class="toast-container"></div>
+
+  <!-- SCRIPT PRINCIPAL -->
+</body>
+</html>
